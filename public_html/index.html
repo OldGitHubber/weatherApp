@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<!--
+****************  GET TIME ZONE DETAILS AND ADD TO OUTPUT ****************
+https://developers.google.com/maps/documentation/timezone/intro
+
+https://maps.googleapis.com/maps/api/timezone/json?parameters
+
+API key:  AIzaSyBhc1u7VnzfJDUrf-ZCUVgrxq3QUJeVyVQ#
+
+Params:  location=lat,lon
+Timestamp: specifies the desired time as seconds since midnight, January 1, 1970 UTC. The Google Maps Time Zone API uses the timestamp to determine whether or not Daylight Savings should be applied. Times before 1970 can be expressed as negative values.
+key: key=AIzaSyBhc1u7VnzfJDUrf-ZCUVgrxq3QUJeVyVQ#
+
+response: dstOffset the offset for daylight-savings time in seconds. This will be zero if the time zone is not in Daylight 
+rawOffset: the offset from UTC (in seconds) for the given location. This does not take into effect daylight savings.
+timeZoneId: a string containing the "tz" ID of the time zone, such as "America/Los_Angeles" or "Australia/Sydney". These IDs are defined in the IANA Time Zone Database, which is also available in searchable format in Wikipedia's List of tz database time zones.
+timeZoneName: a string containing the long form name of the time zone. This field will be localized if the language parameter is set. eg. "Pacific Daylight Time" or "Australian Eastern Daylight Time"
+
+status: a string indicating the status of the response.
+OK indicates that the request was successful.
+INVALID_REQUEST indicates that the request was malformed.
+OVER_QUERY_LIMIT indicates the requestor has exceeded quota.
+REQUEST_DENIED indicates that the the API did not complete the request. Confirm that the request was sent over HTTPS instead of HTTP.
+UNKNOWN_ERROR indicates an unknown error.
+ZERO_RESULTS indicates that no time zone data could be found for the specified position or time. Confirm that the request is for a location on land, and not over water.
+error_message: more detailed information about the reasons behind the given status code, if other than OK.
+
+The local time of a given location is the sum of the timestamp parameter, and the dstOffset and rawOffset fields from the result.
+
+The below query performs a time zone request for Nevada, USA. The timestamp is set to March 8th, 2012.
+
+https://maps.googleapis.com/maps/api/timezone/json?location=39.6034810,-119.6822510&timestamp=1331161200&key=AIzaSyBhc1u7VnzfJDUrf-ZCUVgrxq3QUJeVyVQ#
+Response:
+
+{
+   "dstOffset" : 0,
+   "rawOffset" : -28800,
+   "status" : "OK",
+   "timeZoneId" : "America/Los_Angeles",
+   "timeZoneName" : "Pacific Standard Time"
+}
+
+************  ADD ERROR HANLING FOR ALL WEB SERVICE CALLS ******************
+
+*********** when pressing button, update background image to match *************
+
+
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+API documentation at: http://openweathermap.org/api
+
+icons http://openweathermap.org/img/w/10d.png
+
+http://api.openweathermap.org/data/2.5/forecast/daily?q=birmingham,uk&cnt=2&appid=cdfd2755fcf7f6b5e91ced130ef8fd2c
+
+api.openweathermap.org/data/2.5/weather?q={city name} for current status
+
+lots of forecast data: http://openweathermap.org/data/2.5/forecast?q=blackpool,uk&appid=cdfd2755fcf7f6b5e91ced130ef8fd2c
+
+Sunrise set times: http://api.sunrise-sunset.org/json?lat=36.7201600&lng=-4.4203400&date=2016-02-17
+need to add link to site
+-->
+<html>
+  <head>
+    <title>Weather Forecast</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="weather.css">
+    <script src="weather.js"></script>
+  </head>
+  <body>
+
+    <div class="container-fluid" id="background">
+  
+        
+        <div class="row">
+          <div class="col-xs-12 col-md-4 col-md-offset-4">
+            <div class="input-group">
+              <input type="text" class="form-control" id="search-term" placeholder="City & country. e.g. london,uk" >
+              <span class="input-group-btn">
+                <button class="btn btn-default" id="btn-search" type="button">Search</button>
+              </span>
+            </div><!-- /input-group -->
+          </div><!-- /.col-lg-6 -->
+        </div>
+
+        
+   
+    
+        <div class="row">
+          <div class="col-xs-12 col-md-4 col-md-offset-4">
+            <ul class="list-group">
+              <li class="list-group-item">
+                 <p id="location"></p>
+                  <div id="coords"></div>
+              </li>
+              <li class="list-group-item" id="sunrise"></li>
+              <li class="list-group-item" id="sunset"></li>
+              <li class="list-group-item" id="time-diff"></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-xs-12 col-md-4 col-md-offset-4"> 
+            <div class="panel-group">
+
+            </div>
+          </div>
+        </div>
+        <div id="weather-result"></div>
+      </div>
+    
+        
+    
+  </body>
+</html>

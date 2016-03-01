@@ -1,0 +1,86 @@
+
+
+
+{"city": {
+  "id":2655459,
+  "name":"Blackpool",
+  "coord": {
+    "lon":-3.05,
+    "lat":53.816669
+  },
+  "country":"GB",
+  "population":0,
+  "sys":{
+    "population":0
+  }
+},
+
+"cod":"200",
+"message":0.0042,
+"cnt":8,
+"list":[{
+  "dt":1455721200,
+  "main":{
+    "temp":277.97,
+    "temp_min":277.97,
+    "temp_max":277.973,
+    "pressure":1019.47,
+    "sea_level":1024.41,
+    "grnd_level":1019.47,
+    "humidity":100,
+    "temp_kf":0
+  },
+
+  "weather":[{
+    "id":500,
+    "main":"Rain",
+    "description":"light rain",
+    "icon":"10d"
+  }],
+
+  "clouds":{
+    "all":92
+  },
+  
+  "wind":{
+    "speed":4.97,
+    "deg":334.503
+  },
+  
+  "rain":{
+    "3h":0.805
+  },
+
+  "sys":{
+    "pod":"d"
+  },
+
+  "dt_txt":"2016-02-17 15:00:00"
+  },
+
+  {
+    "dt":1455732000,
+    "main":{
+      "temp":277.5,
+      "temp_min":277.5,
+      "temp_max":277.504,
+      "pressure":1019.14,
+      "sea_level":1024.03,
+      "grnd_level":1019.14,
+      "humidity":97,
+      "temp_kf":0
+    },
+    "weather":[{
+      "id":500,
+      "main":"Rain",
+      "description":"light rain",
+      "icon":"10n"}],
+      
+      "clouds":{
+        "all":92
+      },
+      "wind":{
+        "speed":3.97,
+        "deg":348.001
+      },
+      "rain":{"3h":0.425},"sys":{"pod":"n"},"dt_txt":"2016-02-17 18:00:00"},{"dt":1455742800,"main":{"temp":276.96,"temp_min":276.96,"temp_max":276.964,"pressure":1018.72,"sea_level":1023.7,"grnd_level":1018.72,"humidity":97,"temp_kf":0},"weather":[{"id":500,"main":"Rain","description":"light rain","icon":"10n"}],"clouds":{"all":92},"wind":{"speed":3.5,"deg":341.5},"rain":{"3h":0.015},"sys":{"pod":"n"},"dt_txt":"2016-02-17 21:00:00"},{"dt":1455753600,"main":{"temp":276.68,"temp_min":276.679,"temp_max":276.68,"pressure":1018.6,"sea_level":1023.59,"grnd_level":1018.6,"humidity":95,"temp_kf":0},"weather":[{"id":500,"main":"Rain","description":"light rain","icon":"10n"}],"clouds":{"all":88},"wind":{"speed":3.31,"deg":341.502},"rain":{"3h":0.01},"sys":{"pod":"n"},"dt_txt":"2016-02-18 00:00:00"},{"dt":1455764400,"main":{"temp":276.28,"temp_min":276.275,"temp_max":276.28,"pressure":1018.59,"sea_level":1023.6,"grnd_level":1018.59,"humidity":94,"temp_kf":0},"weather":[{"id":803,"main":"Clouds","description":"broken clouds","icon":"04n"}],"clouds":{"all":64},"wind":{"speed":3.01,"deg":330.5},"rain":{},"sys":{"pod":"n"},"dt_txt":"2016-02-18 03:00:00"},{"dt":1455775200,"main":{"temp":275.24,"temp_min":275.24,"temp_max":275.24,"pressure":1019.23,"sea_level":1024.23,"grnd_level":1019.23,"humidity":89,"temp_kf":0},"weather":[{"id":801,"main":"Clouds","description":"few clouds","icon":"02n"}],"clouds":{"all":24},"wind":{"speed":2.71,"deg":306.002},"rain":{},"sys":{"pod":"n"},"dt_txt":"2016-02-18 06:00:00"},{"dt":1455786000,"main":{"temp":276.33,"temp_min":276.33,"temp_max":276.33,"pressure":1020.33,"sea_level":1025.4,"grnd_level":1020.33,"humidity":87,"temp_kf":0},"weather":[{"id":800,"main":"Clear","description":"sky is clear","icon":"02d"}],"clouds":{"all":8},"wind":{"speed":3.22,"deg":274.501},"rain":{},"sys":{"pod":"d"},"dt_txt":"2016-02-18 09:00:00"},{"dt":1455796800,"main":{"temp":279.52,"temp_min":279.516,"temp_max":279.52,"pressure":1021.14,"sea_level":1026.09,"grnd_level":1021.14,"humidity":95,"temp_kf":0},"weather":[{"id":500,"main":"Rain","description":"light rain","icon":"10d"}],"clouds":{"all":32},"wind":{"speed":4.14,"deg":272.001},"rain":{"3h":0.005},"sys":{"pod":"d"},"dt_txt":"2016-02-18 12:00:00"}]}
