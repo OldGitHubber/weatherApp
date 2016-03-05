@@ -1,84 +1,31 @@
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
-/* 
-    Created on : 15-Feb-2016, 16:29:41
-    Author     : HP_SSD
-*/
-
-/* iPhone 3/4/5 LG Optimus S, Sansung Galaxy S2/3/4, ASUS Galaxy 7 */
-@media screen and (max-width: 320px) {
-  #time-diff {
-   // display: block;
-   // padding-left: 5px;
-  }
-}
-
-/* use this for anything above 320 but max of 360. Left max off as this app is ok for anything over 320 */
-/*@media screen and (min-width: 321px) and (max-width: 360px){*/
-@media screen and (min-width: 321px) and (max-width: 360px){
-  .container-fluid {
-  //  padding-left: 20px;
-   // padding-right: 20px;
-   // font-size: 0.9em;
-  }
-} 
-  
-
 #weather-result {
   color: blue;
 }
 
-pre {outline: 1px solid #ccc; padding: 5px; margin: 5px; }
-.string { color: green; }
-.number { color: darkorange; }
-.boolean { color: blue; }
-.null { color: magenta; }
-.key { color: red; }
-
 body {
   font-family: Helvetica;
- 
-  
-  
 }
 
 #background {
-   background-repeat: no-repeat;
-    background-position: center center; /* centre horizontal and vertical */
-    background-attachment: fixed;       /* don't scroll as vertical scroll bar scrolls the text over image */
-    -webkit-background-size: cover;     /* size to completely cover the element's area. Old Chrome, firefox*/
-    -moz-background-size: cover;        /* old mozila version 3.6 */
-    -o-background-size: cover;          /* old opera version */
-    background-size: cover;             /* All modern browsers support this one */
-  //  height: 821px;
-   // background-image: url("./images/light-cloud.jpg"); /* need to use forward slashes */
-     padding-top: 15px; /* Push search box down a bit */
-  //  padding-top: 200px;
- //   padding-left: 60px;
+  background-repeat: no-repeat;
+  background-position: center center; /* centre horizontal and vertical */
+  background-attachment: fixed;       /* don't scroll as vertical scroll bar scrolls the text over image */
+  -webkit-background-size: cover;     /* size to completely cover the element's area. Old Chrome, firefox*/
+  -moz-background-size: cover;        /* old mozila version 3.6 */
+  -o-background-size: cover;          /* old opera version */
+  background-size: cover;             /* All modern browsers support this one */
+  padding-top: 15px;                  /* Push search box down a bit */
 }
 
-#coords {
- // background-color: white;
- // border-radius: 5px;
- //display: inline; /* inline with time-diff */
-}
 #location {
   font-size: 1.5em;
 }
 
 .list-group {
-  margin-top: 10px; // Move list away from input box
+  margin-top: 10px; /* Move list away from input box */
 }
 
 #time {
   padding-left: 10px;
   font-size: 0.9em;
-}
-
-#time-diff {
-//  display: inline; /* inline with coords */
- // padding-left: 10px;
 }
