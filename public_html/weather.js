@@ -137,7 +137,7 @@ $(document).ready(function () {
 
           // use first time sample of weather in list to reflect weather background i.e. first element result
           // Background images are named the same as the weather icon images but are stored in a different place
-          var backgroundImage = "./images/" + json.list[0].weather[0].icon + ".jpg";
+          var backgroundImage = "http://www.tonynicol.com/weather/images/" + json.list[0].weather[0].icon + ".jpg";
         
           // Copy image to page background under css control
           $("#background").css("background-image", "url(" + backgroundImage + ")");
@@ -210,7 +210,7 @@ $(document).ready(function () {
                   <div class="panel-body" >Wind speed: ' + windSpeedMps + 'm/s, ' + windSpeedMph + 'mph</div> \
                   <div class="panel-body" >Wind Direction: ' 
                     + getWindDirection(parseFloat(windDirection)) 
-                    + '  (' + windDirection + '&#176;) \\n\
+                    + '  (' + windDirection + '&#176;) \
                   </div> \
                   <div class="panel-footer"></div> \
                 </div> \
